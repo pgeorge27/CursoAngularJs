@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="miAplicacionAngular">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Clase 18 - Representar colecciones de Datos</title>
+	
+</head>
+<body>
+	<div ng-controller="miControlador">
+		<ul>
+			<li ng-repeat="datoIndividual in datos">{{datoIndividual}}</li>
+		</ul>
+		<input type="text" ng-model="nuevoItem">
+		<button ng-click="agregar()">Guardar</button>
+	</div>
+<script src="../js/angular.min.js"></script>
+<script src="./js/miScript.js"></script>
+</body>
+</html>

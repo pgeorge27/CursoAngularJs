@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="miAplicacionAngular">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Clase 5 - Filtros de Datos</title>
+</head>
+<body>
+
+<div ng-controller="miControlador">
+	<input type="text" ng-model="buscarFruta">
+	<ul>
+		<li ng-repeat="fruta in frutas | filter:buscarFruta">
+			{{fruta}}
+		</li>
+	</ul>
+</div>
+
+<script src="../js/angular.min.js"></script>
+<script src="./js/miScript.js"></script>
+</body>
+</html>

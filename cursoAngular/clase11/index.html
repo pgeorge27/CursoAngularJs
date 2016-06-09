@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="miAplicacionAngular">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Clase 11 - Manipulando Propiedades CSS</title>
+	<style>
+		img{
+			display: block;
+			margin: auto;
+		}
+		.preguntas{
+			width: 400px;
+			margin: 30px auto;
+			background: silver;
+			padding: 20px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div ng-controller="miControlador">
+		<img src="http://lorempixel.com/200/200" alt="Img Aleatoria">
+
+		<div id="contenedorCaja">
+			<img src="http://lorempixel.com/200/200" alt="Img Aleatoria">
+		</div>
+
+		<div class="preguntas" ng-style="estilosAngular">
+			<button ng-click="opcionA()">Opción A</button>
+			<button ng-click="opcionB()">Opción B</button>
+			<hr>
+			<button ng-click="cambiarEstilo()">Cambiar Estilo</button>
+			<button ng-click="cambiarClase()">Cambiar Clase</button>
+			<hr>
+			<button ng-click="ocultarCaja()">Ocultar Caja</button>
+			<button ng-click="mostrarCaja()">Mostrar Caja</button>
+		</div>
+	</div>
+<script src="../js/angular.min.js"></script>
+<script src="./js/miScript.js"></script>
+</body>
+</html>

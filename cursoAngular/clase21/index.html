@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="miAplicacionAngular">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Clase 21 - Acceder a datos externos</title>
+</head>
+<body>
+	<div ng-controller="miControlador" data-ng-init="inicializar()">
+		<h1>Equipo-A</h1>
+		<p>{{equipo.historia}}</p>
+		<ul>
+			<li ng-repeat="integrante in equipo.integrantes">
+				{{integrante.rango}} {{integrante.nombre}} ( {{integrante.especialidad}} )
+			</li>
+		</ul>
+	</div>
+<script src="../js/angular.min.js"></script>
+<script src="./js/miScript.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="miAplicacionAngular">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Clase 20 - Lista con objetos</title>
+</head>
+<body>
+	<div ng-controller="miControlador">
+		<ul>
+			<li ng-repeat="heroe in heroes" ng-click="mostrarDatos(heroe.apellido)">{{heroe.nombre}}</li>
+		</ul>
+	</div>
+<script src="../js/angular.min.js"></script>
+<script src="./js/miScript.js"></script>
+</body>
+</html>

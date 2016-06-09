@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="miAplicacionAngular">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Clase 6 - Ordenar colecciones de datos</title>
+</head>
+<body>
+
+<div ng-controller="miControlador">
+	<input type="text" ng-model="buscarFruta">
+	<ul>
+		<li ng-repeat="fruta in frutas | filter:buscarFruta | orderBy:'+nombre'">
+			<h2>{{fruta.nombre}}</h2>
+			<p>Fruta de color {{fruta.color}} conocida por ser {{fruta.propiedades}}</p>
+		</li>
+	</ul>
+</div>
+
+<script src="../js/angular.min.js"></script>
+<script src="./js/miScript.js"></script>
+</body>
+</html>

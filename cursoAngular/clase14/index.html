@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="miAplicacionAngular">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Clase 14 - Eventos e iteraciones - Click</title>
+</head>
+<body>
+	<div ng-controller="miControlador" id="principal">
+		<p ng-click="saludo()">También funciona en párrafos</p>
+		<button ng-click="saludo()">Click</button>
+		<p><b>Cantidad de clicks: {{conteoClicks}}</b></p>
+	</div>
+<script src="../js/angular.min.js"></script>
+<script src="./js/miScript.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="miAplicacionAngular">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Clase 12 - Ocultar y mostrar elementos</title>
+	<style>
+		img{
+			display: block;
+			margin: auto;
+		}
+		.preguntas{
+			width: 400px;
+			margin: 30px auto;
+			background: silver;
+			padding: 20px;
+			text-align: center;
+		}
+		.segundoEstilo{
+			width: 600px;
+			margin: 60px auto;
+			background: green;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div ng-controller="miControlador">
+		
+		<div id="contenedorCaja" ng-hide="ocultarMenu">
+			<img ng-src="{{imagenActiva}}" alt="Img Aleatoria">
+		</div>
+
+		<div class="preguntas" ng-style="estilosAngular" ng-class="clasesAngular">
+			<button ng-click="opcionA()">Opción A</button>
+			<button ng-click="opcionB()">Opción B</button>
+			<hr>
+			<button ng-click="cambiarEstilo()">Cambiar Estilo</button>
+			<button ng-click="cambiarClase()">Cambiar Clase</button>
+			<hr>
+			<button ng-click="ocultarCaja()">Ocultar Caja</button>
+			<button ng-click="mostrarCaja()">Mostrar Caja</button>
+		</div>
+	</div>
+<script src="../js/angular.min.js"></script>
+<script src="./js/miScript.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="miAplicacionAngular">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Clase 2 - Expresiones</title>
+</head>
+<body>
+<div>
+	La sumatoria de 5+5={{5+5}}
+</div>
+<div>
+	<p>{{ (30-10) / 100 * 8}}</p>
+</div>
+<div ng-controller="miControlador">
+	<p>{{mensaje}}</p>
+	<p>{{mensaje2}}</p>
+	<p><b>PERSONA</b></p>
+	<p><b>Nombre:</b> {{persona.nombre}}</p>
+	<p><b>Apellido:</b> {{persona.apellido}}</p>
+	<p><b>Edad:</b> {{persona.edad}}</p>
+	<p><b>Numero Aleatorio:</b> {{ numeroAleatorio() }}</p>
+</div>
+
+<script src="../js/angular.min.js"></script>
+<script src="./js/miScript.js"></script>
+</body>
+</html>

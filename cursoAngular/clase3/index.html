@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="miAplicacionAngular">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Clase 3 - Filtros de Expresiones</title>
+	<style>
+		.pais{
+			text-transform: capitalize;
+		}
+	</style>
+</head>
+<body>
+
+<div ng-controller="miControlador">
+	<h1>Café</h1>
+	<h2>Café Americano: {{12 | currency : "$"}}</h2>
+	<h2>Café Latte: {{12 | currency : "$"}}</h2>
+	<h1>País</h1>
+	<p class="pais">{{"China" | lowercase}}</p>
+	<p class="pais">{{"ChiLe" | lowercase}}</p>
+	<p class="pais">{{"CROACIA" | lowercase}}</p>
+	<p class="pais">{{"CoLOMBia" | lowercase}}</p>
+	<p class="pais">{{"costa rica" | lowercase}}</p>
+	<p>otro texto explicando algo</p>
+	<h1>Representando números</h1>
+	<p>{{3.1415926 | number : 2}}</p>
+	<p>{{22.205040 | number : 2 | currency: "MXP $"}}</p>
+	<h1>Formato de Fechas</h1>
+	<p>{{'946641599000' | date : 'dd/MM/yy'}}</p>
+	<p>{{'946641599000' | date : 'mediumDate'}}</p>
+</div>
+
+<script src="../js/angular.min.js"></script>
+<script src="./js/miScript.js"></script>
+</body>
+</html>
