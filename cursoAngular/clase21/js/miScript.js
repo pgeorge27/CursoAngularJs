@@ -1,5 +1,5 @@
 /*jslint browser: true*/
-/*global $http, jQuery, alert, angular*/
+/*global $http, angular*/
 var miAppAngular = angular.module('miAplicacionAngular', []);
 
 miAppAngular.controller('miControlador', function ($scope, $http) {
