@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="miAplicacionAngular">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Clase 24 - Plantillas y rutas</title>
+	<style>
+		ul{margin: 0; padding: 0; margin: auto; width: 400px;}
+		li{float: left; height: 30px; list-style-type: none; width: 100px;}
+		a{display: block;}
+		h2{color: red;}
+		div{clear: both;}
+	</style>
+</head>
+<body>
+	<div id="menu" ng-include=" './plantillas/menu.html' "></div>
+	<div id="contenedor" ng-view>
+    </div>
+    <a href="#/pantalones/rojos">Pantalones Rojos</a>
+    <a href="#/pantalones/azules">Pantalones Azules</a>
+    <a href="#/pantalones/verdes">Pantalones Verdes</a>
+	<script src="../js/angular.min.js"></script>
+	<script src="https://code.angularjs.org/1.5.6/angular-route.min.js"></script>
+	<script src="./js/miScript.js"></script>
+	<script src="./controladores/controladorSeccion1.js"></script>
+</body>
+</html>
